@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
-  "homepage": "https://ayamdobhal.github.io/",
+  "homepage": "https://iamdobhal.dev",
   "type": "module",
   "scripts": {
     "dev": "vite",
