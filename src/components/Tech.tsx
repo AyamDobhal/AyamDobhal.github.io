@@ -10,10 +10,10 @@ const Tech = () => {
     <>
       <motion.div variants={textVariant(0)}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Technologies I have worked with
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience
+          Skills
         </h2>
       </motion.div>
       <div className="flex flex-row flex-wrap justify-center gap-10">
