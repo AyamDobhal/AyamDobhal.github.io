@@ -34,45 +34,78 @@ function Header({}: Props) {
 
         <SocialIcon
           url="https://www.facebook.com/AyamD1533/"
-          fgColor="blue"
+          fgColor="white"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://www.youtube.com/@ayamdobhal"
-          fgColor="red"
+          fgColor="white"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://www.instagram.com/ayamdobhal/"
-          fgColor="pink"
+          fgColor="white"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://www.linkedin.com/in/ayamdobhal/"
-          fgColor="blue"
+          fgColor="white"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://twitter.com/AyamDobhal"
-          fgColor="cyan"
+          fgColor="white"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://www.reddit.com/user/AyamDobhal"
-          fgColor="red"
+          fgColor="white"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://t.me/ayamdobhal"
-          fgColor="blue"
+          fgColor="white"
           bgColor="transparent"
         />
+
+        <SocialIcon
+        url="mailto:me@iamdobhal.dev"
+        fgColor="white"
+        bgColor="transparent"
+      />
+
+      </motion.div>
+
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        viewport={{ once: false }}
+        className="flex flex-row items-center"
+      >
+        <p className="text-white text-[14px] font-medium">
+          Made with ❤️ by Ayam Dobhal
+        </p>
       </motion.div>
     </header>
   );
