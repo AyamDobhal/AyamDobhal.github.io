@@ -1,11 +1,11 @@
-import { BallCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
-import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
+import { technologies } from "../constants";
+import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
+import { BallCanvas } from "./canvas";
 
-const Tech = () => {
+const techStack = () => {
   return (
     <>
       <motion.div variants={textVariant(0)}>
@@ -27,4 +27,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export const TechStack = SectionWrapper(techStack, "");

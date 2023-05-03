@@ -1,11 +1,9 @@
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
-import { styles } from "../styles";
+import Tilt from "react-tilt";
 import { services } from "../constants";
-
+import { SectionWrapper } from "../hoc/SectionWrapper";
+import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
-import SectionWrapper from "../hoc/SectionWrapper";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -15,11 +13,6 @@ const ServiceCard = ({ index, title, icon }) => {
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
-          // options = {{
-          //   max: 45,
-          //   scale: 1.1,
-          //   speed: 450,
-          // }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
@@ -32,7 +25,8 @@ const ServiceCard = ({ index, title, icon }) => {
   );
 };
 
-const About = () => {
+const about = () => {
+  const age = Math.abs(new Date(new Date().getTime() - new Date("2003-03-15").getTime()).getFullYear() - 1970);
   return (
     <>
       <motion.div variants={textVariant(0)}>
@@ -43,9 +37,9 @@ const About = () => {
         variants={fadeIn("", "", 0.5, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a self-taught fullstack/blockchain developer who loves to code! I
-        have over 2 years of professional experience as a developer and I like
-        exploring new technologies and frameworks. I started my journey as a
+        I'm a {age} year old self-taught fullstack/blockchain developer who loves to 
+        code! I have over 2 years of professional experience as a developer and I 
+        like exploring new technologies and frameworks. I started my journey as a
         programmer back in 2016 with C language and later moved on to Python and
         web development. Over the past 2 years, I've transitioned into the field
         of blockchain development and since then have worked on various projects
@@ -77,4 +71,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export const About = SectionWrapper(about, "about");

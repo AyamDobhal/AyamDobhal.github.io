@@ -1,5 +1,3 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -7,10 +5,11 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { CanvasLoader } from "..";
 
-import CanvasLoader from "../Loader";
-
-const Ball = (props) => {
+const Ball = (props: { imgUrl: any; }) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (

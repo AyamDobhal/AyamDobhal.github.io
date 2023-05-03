@@ -1,8 +1,8 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
-import CanvasLoader from "../Loader";
+import { isMobile } from "react-device-detect";
+import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useState } from "react";
+import { CanvasLoader } from "../";
 
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
@@ -13,7 +13,7 @@ const Earth = () => {
 };
 
 export const EarthCanvas = () => {
-  return (
+  return (isMobile ? null :
     <Canvas
       shadows
       frameloop="demand"

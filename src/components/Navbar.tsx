@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
+import { ayam, close, menu } from "../assets";
 import { navLinks } from "../constants";
-import { menu, close, ayam } from "../assets";
+import { styles } from "../styles";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -78,5 +78,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

@@ -1,13 +1,13 @@
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import { FormEvent, useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
+import { EarthCanvas } from "./canvas";
 
-const Contact = () => {
+const contact = () => {
   const formRef = useRef<any>();
   const [form, setForm] = useState({
     name: "",
@@ -17,9 +17,9 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+  const handleChange = (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { currentTarget } = e;
+    const { name, value } = currentTarget;
 
     setForm({
       ...form,
@@ -27,7 +27,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
@@ -168,4 +168,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export const Contact = SectionWrapper(contact, "contact");

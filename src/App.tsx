@@ -3,14 +3,13 @@ import {
   About,
   Contact,
   Experience,
-  Hero,
   Navbar,
-  Tech,
-  Works,
+  TechStack,
+  Projects,
   StarsCanvas,
-  First,
+  Front,
   Trailer,
-  Header,
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -20,19 +19,18 @@ const App = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Trailer />
           <Navbar />
-          <First />
+          <Front />
 
-          <Hero />
         </div>
 
         <div className="relative z-0">
           <About />
           <Experience />
-          <Tech />
-          <Works />
+          <TechStack />
+          <Projects />
           <Contact />
           <StarsCanvas />
-          <Header />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>

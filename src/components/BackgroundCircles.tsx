@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-type Props = {};
-
-const BackgroundCircles = (props: Props) => {
+export const BackgroundCircles = (props: any) => {
   return (
     <motion.div
       initial={{
@@ -25,5 +23,3 @@ const BackgroundCircles = (props: Props) => {
     </motion.div>
   );
 };
-
-export default BackgroundCircles;

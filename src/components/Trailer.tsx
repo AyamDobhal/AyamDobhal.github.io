@@ -1,6 +1,6 @@
 import AnimatedCursor from "react-animated-cursor";
 
-const trailer = () => {
+export const Trailer = () => {
   return (
     <AnimatedCursor
       color="255,255,255"
@@ -29,5 +29,3 @@ const trailer = () => {
     />
   );
 };
-
-export default trailer;

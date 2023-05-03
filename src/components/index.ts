@@ -1,33 +1,12 @@
-import {
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
-} from "./canvas";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import About from "./About";
-import Tech from "./Tech";
-import Experience from "./Experience";
-import Works from "./Works";
-import Contact from "./Contact";
-import First from "./First";
-import Trailer from "./Trailer";
-import Header from "./Header";
-
-export {
-  Hero,
-  Navbar,
-  About,
-  Tech,
-  Experience,
-  Works,
-  Contact,
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
-  First,
-  Trailer,
-  Header,
-};
+export * from "./About";
+export * from "./BackgroundCircles";
+export * from "./Contact";
+export * from "./Experience";
+export * from "./Footer";
+export * from "./Front";
+export * from "./Loader";
+export * from "./Navbar";
+export * from "./Projects";
+export * from "./Tech";
+export * from "./Trailer";
+export * from "./canvas";
