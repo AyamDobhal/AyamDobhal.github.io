@@ -147,7 +147,7 @@ const experiences = [
     company_name: "Codemarks",
     icon: codemarks,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Aug 2022 - Present",
     points: [
       "Developed the backend of various applications.",
       "Built and deployed multiple blockchain applications on the BSC chain.",
