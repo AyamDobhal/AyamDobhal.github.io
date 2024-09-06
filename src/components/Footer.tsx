@@ -33,18 +33,6 @@ export function Footer({}: Props) {
         />
 
         <SocialIcon
-          url="https://www.facebook.com/AyamD1533/"
-          fgColor="white"
-          bgColor="transparent"
-        />
-
-        <SocialIcon
-          url="https://www.youtube.com/@ayamdobhal"
-          fgColor="white"
-          bgColor="transparent"
-        />
-
-        <SocialIcon
           url="https://www.instagram.com/ayamdobhal/"
           fgColor="white"
           bgColor="transparent"
@@ -52,12 +40,6 @@ export function Footer({}: Props) {
 
         <SocialIcon
           url="https://www.linkedin.com/in/ayamdobhal/"
-          fgColor="white"
-          bgColor="transparent"
-        />
-
-        <SocialIcon
-          url="https://twitter.com/AyamDobhal"
           fgColor="white"
           bgColor="transparent"
         />
