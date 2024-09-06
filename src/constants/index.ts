@@ -155,6 +155,18 @@ const experiences = [
       "Worked on frontend of a few projects.",
     ],
   },
+  {
+    title: "Fullstack/Blockchain Developer",
+    company_name: "Spectre Labs LLC",
+    icon: backend,
+    iconBg: "#383E56",
+    date: "Jun 2024 - Aug 2024",
+    points: [
+      "Wrote smart contracts allowing users to stake and restake their ETH into Eigen Layer strategies.",
+      "Implemented an ERC4626 based liquid vault.",
+      "Architected APIs to interact with the contracts",
+    ],
+  },
 ];
 
 const projects = [
